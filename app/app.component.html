@@ -1,0 +1,24 @@
+
+<!-- Session Storage 
+syntax : 1. sessionStorage.setitem("test","test1")
+         2. sessionStorage.getitem("test")-->
+
+<h1 style="color: red;">Session storage</h1>
+<button (click)="SetSession()">save data</button>
+<br><br>
+<button (click)="GetSession()">get data</button>
+<br><br>
+<!-- Local Storage 
+syntax : 1. localStorage.setitem("test","local")
+         2. localStorage.getitem("test")-->
+         
+<h1 style="color: red;">Local storage</h1>
+<button (click)="SetSessions()">save data</button>
+<br><br>
+<button (click)="GetSessions()">get data</button>
+<br><br>
+<button (click)="Remove()">Remove</button>
+<br><br><br>
+<app-input-component></app-input-component>
+<p>Stored value in local storage: {{ localStorageValue }}</p>
+<p>Stored value in session storage: {{ sessionStorageValue }}</p>
